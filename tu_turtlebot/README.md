@@ -1,11 +1,5 @@
-turtlebot
-=========
-
-The turtlebot stack provides all the basic drivers for running and using a [TurtleBot](http://turtlebot.com) with [ROS](http://www.ros.org).
-
-ROS Wiki : (http://www.ros.org/wiki/Robots/TurtleBot)
-
-
-
-
-![TurtleBot Logo](http://www.turtlebot.com/assets/images/turtlebot_logo.png)
+I think this contains all the mods that I made in 2015-16 to the basic 
+turtlebot stack.  I'd like to figure out how to put these alongside
+the basic tutlebot stack instead of replacing it.
+--DrN
+4/1/2021

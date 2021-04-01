@@ -12,10 +12,10 @@ to use:
 1) mkdir -p ~/code/tu_turtlebot_ws/src
 2) cd ~/code/tu_turtlebot_ws/src
 3) git clone git@github.com:NickelsLab/turtlebot2.git
-3a) cd tu_turtlebot
+3a) cd turtlebot2
 3b) git checkout melodic-devel
 3c) cd ..
-4) vcs import < tu_turtlebot/repos
+4) vcs import < turtlebot2/tu_turtlebot/repos
 5) source /opt/ros/melodic/setup.bash
 6) rosdep install --from-paths src --ignore-src -r -y
 7) catkin build
