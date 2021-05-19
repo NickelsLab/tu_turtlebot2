@@ -1,0 +1,26 @@
+<launch>
+
+<!--  <node pkg="tf" type="static_transform_publisher" name="base_link_to_base_laser_link" args="0.058 0 0.125 0.0 0.0 3.1416 /base_link /base_laser_link 100" /> -->
+<!--  <node pkg="tf" type="static_transform_publisher" name="base_footprint_to_base_link" args="0 0 0 0 0 0  /base_footprint /base_link 100" /> -->
+
+
+  <!-- Run self-filter -->
+  <node name="gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=/scan" output="screen">
+    <param name="linearUpdate" value="0.1" />
+    <param name="angularUpdate" value="0.05" /> 
+    <param name="xmin" value="-20" />   
+    <param name="ymin" value="-20" />
+    <param name="xmax" value="20" />    
+    <param name="ymax" value="20" />
+    <param name="maxUrange" value="6" />        
+  </node>
+
+  <!--- Run gmapping -->
+  <include file="$(find turtlebot_navigation)/launch/includes/gmapping/gmapping.launch.xml" >
+    <arg name="scan_topic" value="/scan" />
+  </include>
+
+  <!--- Run Move Base and Robot Pose EKF -->
+  <include file="$(find turtlebot_navigation)/laser/move_base_laser.launch" />
+
+</launch>
