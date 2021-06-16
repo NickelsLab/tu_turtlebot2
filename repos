@@ -7,6 +7,10 @@ repositories:
     type: git
     url: https://github.com/GT-RAIL/robot_pose_publisher.git
     version: develop
+  robot_upstart:
+    type: git
+    url: https://github.com/clearpathrobotics/robot_upstart.git
+    version: melodic-devel
   rocon_app_platform:
     type: git
     url: https://github.com/robotics-in-concert/rocon_app_platform.git
@@ -23,6 +27,10 @@ repositories:
     type: git
     url: https://github.com/orbbec/ros_astra_launch.git
     version: master
+  tu_turtlebot2:
+    type: git
+    url: git@github.com:NickelsLab/turtlebot2.git
+    version: melodic-devel
   turtlebot:
     type: git
     url: https://github.com/turtlebot/turtlebot.git
@@ -55,7 +63,3 @@ repositories:
     type: git
     url: https://github.com/stonier/zeroconf_avahi_suite.git
     version: indigo
-  turtlebot2_repo:
-    type: git
-    url: git@github.com:NickelsLab/turtlebot2.git
-    version: melodic-devel
