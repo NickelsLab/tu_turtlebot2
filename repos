@@ -27,10 +27,6 @@ repositories:
     type: git
     url: https://github.com/orbbec/ros_astra_launch.git
     version: master
-  tu_turtlebot2:
-    type: git
-    url: git@github.com:NickelsLab/turtlebot2.git
-    version: melodic-devel
   turtlebot:
     type: git
     url: https://github.com/turtlebot/turtlebot.git
