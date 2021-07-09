@@ -1,0 +1,13 @@
+<package>
+  <name>tu_turtlebot_navigation</name>
+  <version>2.4.2</version>
+  <license>Proprietary</license>
+  <description>
+	  tu_turtlebot_navigation provides roslaunch scripts for starting the TurtleBot base functionality, with Trinity additions/modifications.
+  </description>
+  <author>Kevin Nickels</author>
+  <maintainer email="knickels@trinity.edu">Dr Nickel</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>turtlebot_navigation</run_depend>
+</package>
