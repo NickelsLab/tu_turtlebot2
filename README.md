@@ -9,18 +9,19 @@ This has:
 # branch melodic-devel
 ## setup for operation under ros-melodic
 0) sudo apt install python3-vcstool
-1) mkdir -p ~/code/tu_turtlebot_ws
-2) cd ~/code/tu_turtlebot_ws
-3) git clone git@github.com:NickelsLab/tu_turtlebot2.git
-3a) cd tu_turtlebot2
-3b) git checkout melodic-devel
-3c) cd ../src
-4) vcs import < tu_turtlebot2/repos
-5) source /opt/ros/melodic/setup.bash
-6) rosdep install --from-paths src --ignore-src -r -y
-7) catkin build
-8) source devel/setup.bash
-9) rosrun robot_upstart install tu_turtlebot_bringup/launch/lidar.launch 
+1) sudo apt-get install ros-melodic-catkin python-catkin-tools 
+2) mkdir -p ~/code/tu_turtlebot_ws
+3) cd ~/code/tu_turtlebot_ws
+4) git clone git@github.com:NickelsLab/tu_turtlebot2.git
+4a) cd tu_turtlebot2
+4b) git checkout melodic-devel
+4c) mkdir ../src; cd ../src
+5) vcs import < ../tu_turtlebot2/repos
+6) source /opt/ros/melodic/setup.bash
+7) cd ..; rosdep install --from-paths src --ignore-src -r -y
+8) catkin build
+9) source devel/setup.bash
+10) rosrun robot_upstart install tu_turtlebot_bringup/launch/lidar.launch 
 
 ## teleop (from another machine, say ros2)
 1) export ROS_IP=131.194.84.216 (ip of ros2)
